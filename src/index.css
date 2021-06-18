@@ -173,14 +173,24 @@
   top: 166.419px;
   transform: matrix(1,0,0,1,0,0);
 }
-.image {
+.imageBknd {
   position: absolute;
   overflow: visible;
   width: 562.065px;
   height: 346.011px;
   left: 281.194px;
   top: 129px;
-  background-image: url("imgs/Boeing\ 777-300ER.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+.image img{
+  position: absolute;
+  overflow: visible;
+  width: 562.065px;
+  height: 346.011px;
+  left: 281.194px;
+  top: 129px;
   background-position: center;
   background-size: cover;
   border-radius: 20px;
@@ -253,34 +263,37 @@
   font-size: 26.867300033569336px;
   color: rgba(255,255,255,1);
 }
-#nextCircle {
-  fill: rgba(255,255,255,1);
-}
-.nextCircle {
+.rightButton {
+  border: none;
+  border-radius: 100%;
+  display: block;
+  padding: 8px 14px;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
   position: absolute;
-  overflow: visible;
-  width: 19.355px;
-  height: 19.355px;
-  left: 810.742px;
-  top: 292.328px;
+  top: 42%;
+  right: 8%;
+  color: black;
+  background-color: white;
 }
-#nextArrow {
-  fill: rgba(255,255,255,1);
-  stroke: rgba(0,0,0,1);
-  stroke-width: 2px;
-  stroke-linejoin: miter;
-  stroke-linecap: butt;
-  stroke-miterlimit: 10;
-  shape-rendering: auto;
-}
-.nextArrow {
-  overflow: visible;
+.leftButton {
+  border: none;
+  border-radius: 100%;
+  display: block;
+  padding: 8px 14px;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
   position: absolute;
-  width: 7.805px;
-  height: 13.133px;
-  left: 818.419px;
-  top: 295.839px;
-  transform: matrix(1,0,0,1,0,0);
+  top: 42%;
+  left: 33%;
+  color: black;
+  background-color: white;
 }
 #welcome {
   left: 126.629px;
