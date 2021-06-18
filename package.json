@@ -64,6 +64,8 @@
     }
   },
   "dependencies": {
+    "@electron/remote": "^1.2.0",
+    "custom-electron-titlebar": "^3.2.7",
     "electron-squirrel-startup": "^1.0.0"
   },
   "devDependencies": {

@@ -1,5 +1,7 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, Menu } = require('electron');
+const Remote = require('@electron/remote/main')
 const path = require('path');
+
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
@@ -9,12 +11,23 @@ if (require('electron-squirrel-startup')) { // eslint-disable-line global-requir
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 916,
-    height: 759,
-    icon: 'src/imgs/ppsIcon.ico'
+    width: 900,
+    height: 750,
+    icon: 'src/imgs/ppsIcon.ico',
+    frame: false,
+    webPreferences: {
+      preload: path.join(__dirname, 'preload.js'),
+      enableRemoteModule: true,
+      nodeIntegration: true,
+    }
     });
     mainWindow.setMenuBarVisibility(false)
-  // and load the index.html of the app.
+    mainWindow.setResizable(false);
+    Remote.initialize()
+
+    const menu = Menu.buildFromTemplate(exampleMenuTemplate());
+    Menu.setApplicationMenu(menu);
+  // and load the index.html of the app. 
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
 };
 
@@ -42,3 +55,6 @@ app.on('activate', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
+const exampleMenuTemplate = () => [
+  {
+    label: ""}]
