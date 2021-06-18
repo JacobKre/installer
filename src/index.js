@@ -10,9 +10,10 @@ const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     width: 916,
-    height: 779,
-  });
-
+    height: 759,
+    icon: 'src/imgs/ppsIcon.ico'
+    });
+    mainWindow.setMenuBarVisibility(false)
   // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
 };
