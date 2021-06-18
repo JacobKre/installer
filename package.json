@@ -10,7 +10,7 @@
     "make": "electron-forge make",
     "publish": "electron-forge publish",
     "lint": "echo \"No linting configured\"",
-    "build-installer": "electron-builder"
+    "build": "electron-builder"
   },
   "build": {
     "appId": "pinpoint-installer",
