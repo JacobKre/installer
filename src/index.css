@@ -92,6 +92,9 @@
   top: 18.067px;
   transform: matrix(1,0,0,1,0,0);
 }
+.fullLogo {
+  padding-bottom: 10px;
+}
 #ID777-300ER a{
   left: 46.442px;
   top: 130.154px;
