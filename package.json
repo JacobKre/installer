@@ -9,7 +9,26 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "lint": "echo \"No linting configured\"",
+    "build-installer": "electron-builder"
+  },
+  "build": {
+    "appId": "pinpoint-installer",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "src/imgs/ppsIcon.ico",
+      "requestedExecutionLevel": "requireAdministrator"
+    },
+    "nsis": {
+      "installerIcon": "src/imgs/ppsIcon.ico",
+      "uninstallerIcon": "src/imgs/ppsIcon.ico",
+      "uninstallDisplayName": "Pinpoint Simulations Installer",
+      "license": "src/license.txt",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
   },
   "keywords": [],
   "author": {
@@ -53,6 +72,7 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.57",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.57",
     "@electron-forge/maker-zip": "^6.0.0-beta.57",
-    "electron": "13.1.2"
+    "electron": "13.1.2",
+    "electron-packager": "^15.2.0"
   }
 }

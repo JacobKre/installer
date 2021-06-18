@@ -6,7 +6,6 @@
   font-family: Futura;
   src: url('fonts/FuturaLight.ttf'); /* file name */
   }
-
 .mediaViewInfo {
   --web-view-name: PinpointInstaller;
   --web-view-id: ppsInstaller;
@@ -90,7 +89,7 @@
   top: 18.067px;
   transform: matrix(1,0,0,1,0,0);
 }
-#ID777-300ER {
+#ID777-300ER a{
   left: 46.442px;
   top: 130.154px;
   position: absolute;
@@ -106,9 +105,13 @@
   font-weight: normal;
   font-size: 26.867300033569336px;
   color: rgba(255,255,255,1);
+  text-decoration: none;
 }
-#ID777-200ER {
-  opacity: 0.57;
+#ID777-300ER:hover a{
+  color: rgb(193,39,45);
+  transition: 0.3s;
+}
+#ID777-200ER a{
   left: 46.442px;
   top: 193.638px;
   position: absolute;
@@ -124,9 +127,13 @@
   font-weight: normal;
   font-size: 26.867300033569336px;
   color: rgba(255,255,255,1);
+  text-decoration: none;
 }
-#ID777-200LR {
-  opacity: 0.57;
+#ID777-200ER:hover a{
+  color: rgb(193,39,45);
+  transition: 0.3s;
+}
+#ID777-200LR a{
   left: 46.442px;
   top: 262.541px;
   position: absolute;
@@ -142,6 +149,11 @@
   font-weight: normal;
   font-size: 26.867300033569336px;
   color: rgba(255,255,255,1);
+  text-decoration: none;
+}
+#ID777-200LR:hover a{
+  color: rgb(193,39,45);
+  transition: 0.3s;
 }
 #redUnderline {
   fill: transparent;
@@ -161,9 +173,6 @@
   top: 166.419px;
   transform: matrix(1,0,0,1,0,0);
 }
-#image {
-  fill: rgba(26,26,26,1);
-}
 .image {
   position: absolute;
   overflow: visible;
@@ -171,6 +180,34 @@
   height: 346.011px;
   left: 281.194px;
   top: 129px;
+  background-image: url("imgs/Boeing\ 777-300ER.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+.image200ER {
+  position: absolute;
+  overflow: visible;
+  width: 562.065px;
+  height: 346.011px;
+  left: 281.194px;
+  top: 129px;
+  background-image: url("imgs/Boeing\ 777-200ER.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+.image200LR {
+  position: absolute;
+  overflow: visible;
+  width: 562.065px;
+  height: 346.011px;
+  left: 281.194px;
+  top: 129px;
+  background-image: url("imgs/Boeing\ 777-200LR.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
 }
 #CommonRef777 {
   left: 281.194px;
@@ -245,39 +282,41 @@
   top: 295.839px;
   transform: matrix(1,0,0,1,0,0);
 }
-#Welcome_to_the_Pinpoint_Simula {
+#welcome {
   left: 126.629px;
-  top: 18.593px;
+  top: 23px;
   position: absolute;
   overflow: visible;
   width: 570px;
   white-space: nowrap;
   line-height: 34.00870895385742px;
-  margin-top: -2.834059715270996px;
+  margin-top: -2.8px;
   text-align: left;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Futura;
+  src: url("fonts/FuturaLight.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
   font-size: 28.34058952331543px;
   color: rgba(255,255,255,1);
 }
-#updateAvail {
-  fill: rgba(255,206,0,1);
-}
 .updateAvail {
   position: absolute;
-  overflow: visible;
-  width: 157.788px;
-  height: 15.516px;
-  left: 0px;
-  top: 704.484px;
+  bottom: 0px;
+  background-color: rgba(255,206,0,1);
+  padding: 5px;
+  margin-left: 27px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-family: Futura;
+  src: url("fonts/FuturaLight.ttf") format("truetype");
+  font-weight: bold;
 }
 #divideLine {
   fill: transparent;
   stroke: rgba(255,255,255,1);
   stroke-width: 1px;
   stroke-linejoin: miter;
-  stroke-linecap: butt;
+  stroke-linecap: butt; 
   stroke-miterlimit: 10;
   shape-rendering: auto;
 }
@@ -289,20 +328,4 @@
   left: 557.581px;
   top: 491.011px;
   transform: matrix(1,0,0,1,0,0);
-}
-#AN_UPDATE_IS_AVAILABLE {
-  left: 5.838px;
-  top: 703.613px;
-  position: absolute;
-  overflow: visible;
-  width: 147px;
-  white-space: nowrap;
-  line-height: 14.40000057220459px;
-  margin-top: -1.200000286102295px;
-  text-align: left;
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  color: rgba(0,0,0,1);
 }
