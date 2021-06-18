@@ -1,0 +1,8 @@
+version: 1.0.0
+files:
+  - url: Pinpoint-Simulations-Installer-Setup-1.0.0.exe
+    sha512: KzYm+8EZ0rYAIj5QaTdK4JEvdhhk1/TyWlW28gXWAUuXM/LZ+wJhU9xSg42P8MdxiAobBrM/HUPckiq1L95jig==
+    size: 59463181
+path: Pinpoint-Simulations-Installer-Setup-1.0.0.exe
+sha512: KzYm+8EZ0rYAIj5QaTdK4JEvdhhk1/TyWlW28gXWAUuXM/LZ+wJhU9xSg42P8MdxiAobBrM/HUPckiq1L95jig==
+releaseDate: '2021-06-18T01:55:35.585Z'
