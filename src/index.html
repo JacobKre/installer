@@ -66,7 +66,11 @@
 				</div>
 				</svg>
 				<div class="installBtn">
-					<a href="https://google.ca" target="_blank">INSTALL</a>
+					<button type="submit" class="sbtn btn btn-secondary btn-c" onclick="spinner()">INSTALL</button>
+					<div class="loader fade">
+						<div class="loading">
+						</div>
+					</div>
 				</div>
 				<div id="welcome">
 					<span>Welcome to the Pinpoint Simulations Installer</span>
@@ -80,6 +84,7 @@
 					</path>
 				</svg>
 			</div>
+			<script src="spinner.js"></script>
 			<script src="renderer.js"></script>
 			<script src="300ERimageSlides.js"></script>
 		</body>
