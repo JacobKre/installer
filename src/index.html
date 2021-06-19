@@ -66,7 +66,7 @@
 				</div>
 				</svg>
 				<div class="installBtn">
-					<button type="submit" class="sbtn btn btn-secondary btn-c" onclick="spinner()">INSTALL</button>
+					<button type="submit" id="installing" class="sbtn btn btn-secondary btn-c" onmousedown="download()" onmouseup="installing()" onclick="spinner()">INSTALL</button>
 					<div class="loader fade">
 						<div class="loading">
 						</div>
@@ -84,7 +84,7 @@
 					</path>
 				</svg>
 			</div>
-			<script src="spinner.js"></script>
+			<script src="download.js"></script>
 			<script src="renderer.js"></script>
 			<script src="300ERimageSlides.js"></script>
 		</body>

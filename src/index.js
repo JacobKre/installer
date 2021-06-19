@@ -1,6 +1,8 @@
 const { app, BrowserWindow, Menu} = require('electron');
 const Remote = require('@electron/remote/main')
 const path = require('path');
+const {download} = require("electron-dl");
+let window;
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
@@ -17,10 +19,8 @@ const createWindow = () => {
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       enableRemoteModule: true,
-      nodeIntegration: true,
-    }
+      nodeIntegration: true,    }
     });
-    mainWindow.setMenuBarVisibility(false)
     mainWindow.setResizable(false);
     Remote.initialize()
 
@@ -57,4 +57,3 @@ app.on('activate', () => {
 const exampleMenuTemplate = () => [
   {
     label: ""}]
-

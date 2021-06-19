@@ -61,7 +61,11 @@
 					<span>The Boeing 777, commonly referred to as the Triple Seven, is an American wide-body airliner developed and manufactured by Boeing Commercial Airplanes. It is the world's largest twinjet. The 777 was designed to bridge the gap between Boeing's 767 and 747, and to replace older DC-10's</span>
 				</div>
 				<div class="installBtn">
-					<a href="https://google.ca" target="_blank">INSTALL</a>
+					<button type="submit" id="installing" class="sbtn btn btn-secondary btn-c" onmouseup="installing()" onclick="spinner()">INSTALL</button>
+					<div class="loader fade">
+						<div class="loading">
+						</div>
+					</div>
 				</div>
 				<div id="welcome">
 					<span>Welcome to the Pinpoint Simulations Installer</span>
@@ -74,6 +78,7 @@
 					<span>AN UPDATE IS AVAILABLE</span>
 				</div>
 			</div>
+			<script src="download.js"></script>
 			<script src="renderer.js"></script>
 			<script src="200LRimageSlides.js"></script>
 		</body>
